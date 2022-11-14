@@ -22,7 +22,7 @@ def step_impl(context):
 
 
 @then('Radio button 2 is selected')
-def step_impl(context):
+def step_impl (context):
     assert context.radiobutton_page.select_radio_button_two().is_selected()
 
 

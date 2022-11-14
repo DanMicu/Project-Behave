@@ -7,11 +7,11 @@ class RadioButtonPage(BasePage):
     URL = "https://formy-project.herokuapp.com/radiobutton"
 
     def radio_button_link(self):
-        radio_button_selector = self.driver.find_element(By.XPATH, "/html/body/div/div/li[12]/a")
+        radio_button_selector = self.driver.find_element(By.XPATH, "/html/body/div/div/li[12]/")
         return radio_button_selector.click()
 
     def select_radio_button_two(self):
-        radio_button2 = (By.CSS_SELECTOR, "input[value='option2']")
+        radio_button2 = (By.CSS_SELECTOR, "input[value='option2']a")
         return self.driver.find_element(*radio_button2)
 
 
